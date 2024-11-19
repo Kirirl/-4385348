@@ -1,0 +1,9 @@
+def get_and_print_integer():
+    try:
+        # Запитуємо введення від користувача
+        user_input = input("Введіть число: ")
+        number = int(user_input)
+        print(f"Ви ввели число: {number}")
+    except ValueError:
+        print("Помилка: введене значення не є цілим числом. Спробуйте ще раз.")
+get_and_print_integer()
